@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML with Script</title>
+</head>
+<body>
+    <h1>Welcome to My Test Page</h1>
+    <p>Hello, everyone</p>
+    <h1>Click Counter</h1>
+            <button id="counter-btn">Click me!</button>
+            <p id="counter">Count: 0</p>
+    <script>
+           let count = 0;
+            document.getElementById('counter-btn').onclick = function() {
+                count++;
+                document.getElementById('counter').innerHTML = 'Count: ' + count;
+            };
+    </script>
+</body>
+</html>
